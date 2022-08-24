@@ -29,7 +29,7 @@ func GetUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if mock.IsMockRequest(r) {
+	if isMock {
 		ResponseOk(w, isMock, mock.GetUserInZh())
 		return
 	} else {
