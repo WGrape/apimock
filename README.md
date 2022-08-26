@@ -27,13 +27,11 @@ require (
 ```
 
 ## 三、如何使用
+使用请参考文章[《基于数据Mock的接口治理方案设计与实现》](https://github.com/WGrape/Blog/issues/233)
 
-### 1、
-
-## 五、完整示例
-关于详细的使用示例请参考 [example](./example) ，其中的 [apidoc.md](./example/apidoc.md) 文件即为 apimock 工具自动生成的接口文档。
-
-
-### 1、多种语言
+### 1、多语言
 
 如在```/mock/mock_zh.go```和```/mock/mock_en.go```文件中分别定义了中文和英文两个版本的```apiMock```结构。这样当需要不同语言文档时，都可以快速支持。
+
+## 四、完整示例
+关于详细的使用示例请参考 [example](./example) ，其中的 [apidoc.md](./example/apidoc.md) 文件即为 apimock 工具自动生成的接口文档。
