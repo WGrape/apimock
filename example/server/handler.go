@@ -37,3 +37,7 @@ func GetUserHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
+
+func PingHandler(w http.ResponseWriter, r *http.Request) {
+	_, _ = w.Write([]byte("ok"))
+}

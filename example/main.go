@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	http.HandleFunc("/ping", server.PingHandler)
 	http.HandleFunc("/api/get_user", server.GetUserHandler)
 	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
