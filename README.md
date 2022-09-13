@@ -33,5 +33,9 @@ require (
 
 如在```/mock/mock_zh.go```和```/mock/mock_en.go```文件中分别定义了中文和英文两个版本的```apiMock```结构。这样当需要不同语言文档时，都可以快速支持。
 
+### 2、接口文档/接口Mock/假接口
+
+通过在```/mock/mock.go```文件中定义```apiMock```结构，不但可以实现接口文档生成，还可以实现接口Mock，和假接口的效果。高效提升了前后端开发的效率。
+
 ## 四、完整示例
 关于详细的使用示例请参考 [example](./example) ，其中的 [apidoc.md](./example/apidoc.md) 文件即为 apimock 工具自动生成的接口文档。
