@@ -1,0 +1,14 @@
+name: update dependences
+
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+  update-dependences:
+    name: update it's dependences
+    runs-on: ubuntu-latest
+    steps:
+      - uses: WGrape/CIManager@main
